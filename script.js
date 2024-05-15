@@ -1,22 +1,27 @@
-class Student{
-    constructor(name, age, faculty){
-        this.name = name,
-        this.age = age,
-        this.faculty = faculty
-    }
-    get studentname(){
-        return this.name
-    }
-
-    set studentname(x){
-        this.name = x
-    }
+function myFunction(some) {
+    document.getElementById("demo").innerHTML = some
 }
 
-const student1 = new Student("Aakash")
-student1.studentname = "Acharya"
+let myPromise = new Promise(function (myResolve, myReject) {
+    let x = 0
 
-function myFunction(){
-    document.getElementById("demo").innerHTML = student1.studentname
-}
 
+    if (x == 0) {
+        myResolve("OK")
+    }
+    else {
+        myReject("Error")
+    }
+})
+myPromise.then(
+    function (value) {
+        myFunction(value)
+
+    },
+    function (error) {
+        myFunction(error)
+    })
+
+setTimeout(function () {
+    myFunction("This is setTime Out")
+}, 3000)
