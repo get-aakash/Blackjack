@@ -1,16 +1,22 @@
-function Student(firstName, lastName, faculty, rollNo, gender){
-    this.firstName = firstName,
-    this.lastName = lastName,
-    this.faculty = faculty,
-    this.rollNo  = rollNo,
-    this.gender = gender
+class Student{
+    constructor(name, age, faculty){
+        this.name = name,
+        this.age = age,
+        this.faculty = faculty
+    }
+    get studentname(){
+        return this.name
+    }
+
+    set studentname(x){
+        this.name = x
+    }
 }
 
-
-const student1 = new Student("Aakash", "Acharya", "computer Science", 1901, "male")
-
+const student1 = new Student("Aakash")
+student1.studentname = "Acharya"
 
 function myFunction(){
-    Student.prototype.shift = "morning"
-    document.getElementById("demo").innerHTML = student1.shift
+    document.getElementById("demo").innerHTML = student1.studentname
 }
+
