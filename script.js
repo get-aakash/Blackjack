@@ -1,27 +1,32 @@
-function myFunction(some) {
-    document.getElementById("demo").innerHTML = some
+
+
+function myFunction1(value){
+    document.getElementById("demo").innerHTML=  value
 }
 
-let myPromise = new Promise(function (myResolve, myReject) {
-    let x = 0
+   let myPromise = new Promise(function(resolve, reject){
+    const success = false
 
-
-    if (x == 0) {
-        myResolve("OK")
+    if(success){
+        resolve("Promise success")
     }
-    else {
-        myReject("Error")
+    else{
+        reject("Promise failed")
     }
-})
-myPromise.then(
-    function (value) {
-        myFunction(value)
+   })
 
+
+
+   myPromise.then(
+    function(value){
+        myFunction1(value)
     },
-    function (error) {
-        myFunction(error)
-    })
+    function(error){
+        myFunction1(error)
+    }
+    
+)
 
-setTimeout(function () {
-    myFunction("This is setTime Out")
-}, 3000)
+setTimeout(function(){
+    myFunction1("Hello")
+},3000)
