@@ -1,84 +1,61 @@
 *{
-    margin: 0;
-}
+    font-style: 'Poppins' sans-serif;
 
+}
 .container{
-    width: 100%;
     min-height: 100vh;
-    padding-top: 4%;
-    padding-left: 10%;
-    background-image: linear-gradient(180deg,#65939A, #84A8AE );
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-.logo img{
-    height: 80px;
-    
-    
-}
-
-.logo p{
-    font-size: 35px;
-    color: #544CB3 ;
-    
-}
-
-.create{
-    padding: 10px;
-}
-
-.create img{
-    height: 40px;
-}
-
-
-
-.create button{
-    display: flex;
-    align-items: center;
-    background: #544CB3;
-    border-radius: 10px;
-    gap: 2px;
-    cursor: pointer;
-    
-}
-
-.create p{
-    font-size: 30px;
-}
-
-#textArea{
-    padding: 10px;
-    
-
-}
-.input-field{
-    padding-bottom: 20px;
-}
-.input-box{
-    position: relative;
     width: 100%;
-    max-width: 500px;
-    min-height: 150px;
-    background: #fff;
-    color: #333;
-    padding: 20px;
-    margin: 20px 0;
+    background: linear-gradient(135deg, #1C3463, #634C1C);
+    padding: 10px;
+}
+.todo-app{
+    background: aliceblue;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    border-radius: 10px;
+    padding: 40px 30px 70px;
+}
+.todo-app h1{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.todo-app h1 img{
+    height: 60px;
+    width: 60px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
     outline: none;
-    border-radius: 5px;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
 
 }
-.input-box img{
-    
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
     cursor: pointer;
 
 }
