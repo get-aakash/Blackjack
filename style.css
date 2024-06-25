@@ -1,35 +1,84 @@
-* {
+*{
     margin: 0;
 }
+
 .container{
-   background: linear-gradient(grey,lightblue);
-   min-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 4%;
+    padding-left: 10%;
+    background-image: linear-gradient(180deg,#65939A, #84A8AE );
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo img{
+    height: 80px;
+    
     
 }
-.container h1{
+
+.logo p{
+    font-size: 35px;
+    color: #544CB3 ;
+    
+}
+
+.create{
+    padding: 10px;
+}
+
+.create img{
+    height: 40px;
+}
+
+
+
+.create button{
     display: flex;
     align-items: center;
-    color: white;
-}
-.container h1 img{
-    margin: 10px;
-    width: 60px;
-    height: 60px;
-}
-.container button{
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    background: linear-gradient(grey,cyan);
-    color: white;
-    border-radius: 30px;
-    margin: 10px;
-    font-size: 16px;
-    outline: 0;
-    border: 0;
+    background: #544CB3;
+    border-radius: 10px;
+    gap: 2px;
     cursor: pointer;
+    
 }
-img{
-    width: 30px;
-    height: 20px;
+
+.create p{
+    font-size: 30px;
+}
+
+#textArea{
+    padding: 10px;
+    
+
+}
+.input-field{
+    padding-bottom: 20px;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+
+}
+.input-box img{
+    
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+
 }
