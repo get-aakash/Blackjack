@@ -1,35 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>CRUD</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <div class="container">
-        <div class="input-field">
-            <h2>CRUD Operations</h2>
-            <div class="form-elements">
-                <input type="text" id="firstName" placeholder="First Name">
-                <input type="text" id="lastName" placeholder="Last Name">
-                <button onclick="addTask()">Create</button>
-
-            </div>
-            <div class="list-container">
-                <ul id="list-items">
-                    <!-- <li>First Name</li>
-                    <li>Last Name</li> -->
-                    <button>Edit</button>
-                    <button>Delete</button>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-<script src="myScript.js"></script>
+    <h1>People Entered:</h1>
+    <h2 id="numberOfCount">0</h2>
+    <button onclick=countPeople()>Count</button>
+    <script src="myScript.js"></script>
 </body>
-
 </html>
