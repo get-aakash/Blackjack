@@ -1,8 +1,15 @@
-let count = document.getElementById("numberOfCount").innerText
-let countTag = document.getElementById("numberOfCount") 
+let count = 0
+let countEl = document.getElementById("numberOfCount")
 
-function countPeople(){
+let name = 'Aakash'
+let greetings = "Hello"
+
+function increment(){
     count++
+    countEl.innerHTML = count
+}
+
+function save(){
     console.log(count)
-    countTag.innerHTML = count
+    document.getElementById("welcomeEl").innerHTML = name + " " + greetings
 }
