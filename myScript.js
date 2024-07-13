@@ -1,15 +1,29 @@
-let count = 0
-let countEl = document.getElementById("numberOfCount")
 
-let name = 'Aakash'
-let greetings = "Hello"
 
-function increment(){
-    count++
-    countEl.innerHTML = count
+const num1 = document.getElementById("num1-el").textContent
+const num2 = document.getElementById("num2-el").textContent
+let value = 0
+
+console.log(typeof(document.getElementById("num1-el").textContent))
+
+function add(){
+    value = num1 + num2
+    document.getElementById("sum-el").textContent ="Sum: " + value
+
 }
 
-function save(){
-    console.log(count)
-    document.getElementById("welcomeEl").innerHTML = name + " " + greetings
+function subtract(){
+    value = num1 - num2
+    document.getElementById("sum-el").textContent ="Sum: " + value
 }
+
+function divide(){
+    value = num1 / num2
+    document.getElementById("sum-el").textContent ="Sum: " + value
+}
+
+function multiply(){
+    value = num1 * num2
+    document.getElementById("sum-el").textContent = "Sum: " + value
+}
+
