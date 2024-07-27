@@ -3,35 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Count App</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    <h1>People Entered:</h1>
-    <h2 id="numberOfCount">0</h2>
-    <button id="increment-btn" onclick="increment()">Increment</button>
-    <button id="save-btn" onclick="save()">SAVE</button>
-    <p id="welcomeEl">Previous Entries: </p>
-    <p id="name"></p>
+    <h2>People Entered:</h2>
+    <p id="count">0</p>
+    <button onclick="inrement()">Increment</button>
+    <button onclick="save()">Save</button>
+    <p id="count-el">Previous Entries: </p>
+    
 
-    <div class="container">
-        <img src="images/shoe2.jpeg" alt="">
-        <h3>Nike Shoe</h3>
-        <button id="btn">Purchase - $149</button>
-        <p id="error"></p>
-    </div>
-
-    <div class="calc-container">
-        <span id="num1-el">8</span>
-        <span id="num2-el">2</span>
-        <br>
-        <button onclick="add()">Add</button>
-        <button onclick="subtract()">Subtract</button>
-        <button onclick="divide()">Divide</button>
-        <button onclick="multiply()">Multiply</button>
-        <br>
-        <span id="sum-el"></span>
-    </div>
     <script src="myScript.js"></script>
 </body>
 </html>
